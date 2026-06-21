@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title data-i18n="page_title">Приглашение</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+
+<audio id="bgMusic" loop>
+  <source src="Zaz_-_Je_veux_(SkySound.cc).mp3" type="audio/mpeg">
+</audio>
+
+<div class="site-content" id="siteContent">
+
+    <!-- музыка -->
+<!-- <audio id="bgMusic" loop>
+  <source src="30-christina-perri-a-thousand-years_l6SIkvzn.mp3" type="audio/mpeg">
+</audio> -->
+
+<!-- кнопка управления -->
+<button id="musicBtn" class="music-btn"></button>
+    <!-- БЛОК 1 -->
+
+<section class="block1 reveal">
+  <img class="block1-img" src="img/1.png" alt="">
+</section>
+
+    <!-- БЛОК 2 -->
+
+<section class="block2">
+  <img class="block2-img reveal" src="img/2.png" alt="">
+</section>
+
+<!-- БЛОК 3 -->
+
+<section class="block3 reveal">
+
+  <div class="block3-wrap">
+    <img class="block3-img" src="img/3.png" alt="">
+  </div>
+
+</section>
+
+    <!-- БЛОК 4 -->
+
+<section class="block4">
+  <img class="block4-img reveal" src="img/4.png" alt="">
+</section>
+
+   <!-- БЛОК 5 -->
+
+<section class="block5 reveal">
+  <img class="block5-img" src="img/5.png" alt="">
+</section>
+<section class="countdown-section">
+
+  <div class="countdown">
+
+    <div class="countdown-item">
+      <span id="days">00</span>
+      <p>дней</p>
+    </div>
+
+    <div class="countdown-item">
+      <span id="hours">00</span>
+      <p>часов</p>
+    </div>
+
+    <div class="countdown-item">
+      <span id="minutes">00</span>
+      <p>минут</p>
+    </div>
+
+    <div class="countdown-item">
+      <span id="seconds">00</span>
+      <p>секунд</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="block5 reveal">
+  <img class="block5-img" src="img/6.png" alt="">
+</section>
+
+<!-- БЛОК 6 -->
+
+<section class="block5 reveal">
+  <img class="block6-img" src="img/7.png" alt="">
+  <img class="block6-img" src="img/8.png" alt="">
+</section>
+
+<!-- БЛОК 7 -->
+
+<section class="block7 reveal">
+  <img class="block7-img" src="img/9.png" alt="">
+</section>
+
+<!-- БЛОК 8 -->
+
+<section class="block8 reveal">
+
+  <img class="block8-img" src="img/10.png" alt="">
+
+  <div class="form-wrap">
+
+    <form class="guest-form" id="guestForm" action="https://api.web3forms.com/submit" method="POST">
+
+      <input type="hidden" name="access_key" value="765529b4-2dd1-4210-a479-865e64bb3c55">
+
+      <input class="form-input" type="text" name="ФИО" placeholder="Ваше ФИО" required>
+
+      <div class="form-group">
+        <p class="form-title">Подтвердите ваше присутствие</p>
+
+        <label class="form-option">
+          <input type="radio" name="Присутствие" value="С радостью буду на свадьбе" required>
+          <span>С радостью буду на свадьбе</span>
+        </label>
+
+        <label class="form-option">
+          <input type="radio" name="Присутствие" value="К сожалению, не смогу присутствовать">
+          <span>К сожалению, не смогу присутствовать</span>
+        </label>
+      </div>
+
+      <div class="form-group">
+        <p class="form-title">Планируете ли вы прийти с гостем?</p>
+
+        <label class="form-option">
+          <input type="radio" name="Гость" value="Да" id="guestYes">
+          <span>Да</span>
+        </label>
+
+        <label class="form-option">
+          <input type="radio" name="Гость" value="Нет">
+          <span>Нет</span>
+        </label>
+      </div>
+
+      <div class="extra-fields" id="guestFields">
+
+        <input class="form-input" type="text" name="ФИО гостя" placeholder="ФИО гостя">
+
+        <input class="form-input" type="text" name="Кем приходитесь друг другу" placeholder="Кем вы приходитесь друг другу?">
+
+      </div>
+
+      <div class="form-group">
+        <p class="form-title">Какие напитки предпочитаете?</p>
+
+        <label class="form-option"><input type="checkbox" name="Напитки" value="Водка"><span>Водка</span></label>
+
+        <label class="form-option"><input type="checkbox" name="Напитки" value="Коньяк"><span>Коньяк</span></label>
+
+        <label class="form-option"><input type="checkbox" name="Напитки" value="Джин"><span>Джин</span></label>
+
+        <label class="form-option"><input type="checkbox" name="Напитки" value="Шампанское"><span>Шампанское</span></label>
+
+        <label class="form-option"><input type="checkbox" name="Напитки" value="Вино красное полусладкое"><span>Вино красное полусладкое</span></label>
+
+        <label class="form-option"><input type="checkbox" name="Напитки" value="Вино белое полусухое"><span>Вино белое полусухое</span></label>
+
+        <label class="form-option"><input type="checkbox" name="Напитки" value="Не пью алкоголь"><span>Не пью алкоголь</span></label>
+
+      </div>
+
+      <div class="form-group">
+        <p class="form-title">Есть ли у вас аллергия или ограничения в питании?</p>
+
+        <label class="form-option">
+          <input type="radio" name="Аллергия" value="Да" id="allergyYes">
+          <span>Да</span>
+        </label>
+
+        <label class="form-option">
+          <input type="radio" name="Аллергия" value="Нет">
+          <span>Нет</span>
+        </label>
+      </div>
+
+      <div class="extra-fields" id="allergyField">
+
+        <input class="form-input" type="text" name="Ограничения" placeholder="На что у вас аллергия/ограничение?">
+
+      </div>
+
+      <div class="form-group">
+        <p class="form-title">Понадобится ли вам трансфер?</p>
+
+        <label class="form-option">
+          <input type="radio" name="Трансфер" value="Да">
+          <span>Да</span>
+        </label>
+
+        <label class="form-option">
+          <input type="radio" name="Трансфер" value="Нет">
+          <span>Нет</span>
+        </label>
+      </div>
+
+      <div class="form-group">
+        <p class="form-title">В какой части праздника вы планируете участвовать?</p>
+
+        <label class="form-option">
+          <input type="radio" name="Участие" value="Буду рядом с вами с самого начала и посещу церемонию регистрации">
+          <span>Буду рядом с вами с самого начала и посещу церемонию регистрации</span>
+        </label>
+
+        <label class="form-option">
+          <input type="radio" name="Участие" value="Присоединюсь к празднованию на банкете">
+          <span>Присоединюсь к празднованию на банкете</span>
+        </label>
+      </div>
+
+      <button class="submit-btn" type="submit">
+        <img src="img/11.png" alt="">
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<!-- БЛОК 9 -->
+
+<section class="block5 reveal">
+  <img class="block6-img" src="img/12.png" alt="">
+</section>
+
+<!-- БЛОК 10 -->
+
+<section class="block5 reveal">
+  <img class="block6-img" src="img/13.png" alt="">
+</section>
+
+    
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
